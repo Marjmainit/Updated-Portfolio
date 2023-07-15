@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- scroll to top button -->
+    <div class="scrollToTop-btn flex-center">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <a href="#services" class="scroll-link"></a>
+    <a href="#about" class="scroll-link"></a>
+    <a href="#contact" class="scroll-link"></a>
+    <a href="#home" class="scroll-link"></a>
+
+
+
+    <!-- light/dark theme button -->
+    <!-- header -->
+
+    <header>
+        <div class="div nav-bar">
+            <a href="#" class="logo" style="text-decoration: none;">Marjorie</a>
+            <div class="div navigation">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- home section -->
+    <section class="home flex-center" id="home">
+        <div class="home-container">
+            <div class="media-icons">
+                <a href="#"><i class="	fab fa-github"></i></a>
+                <a href="#"><i class="	fab fa-linkedin"></i></a>
+                <a href="#"><i class="	fab fa-facebook"></i></a>
+            </div>
+            <div class="info">
+                <h2>Hi, I am Marjorie</h2>
+                <h3>Full Stack Web Developer</h3>
+                <p>I am passionate about creating user-friendly and visually appealing websites.<br>
+                    I am also a strong problem solver and I am always willing to learn new things.</p>
+                <a href="#contact" class="btn" style="font-size: 24px;">Contact Me <i
+                        class='far fa-arrow-alt-circle-right'></i></a>
+            </div>
+            <div class="home-img">
+                <img class="rounded-circle" src="girl.webp" alt="">
+            </div>
+        </div>
+        <div>
+            <a href="#about" class="scroll-down">Scroll Down<i class="fas fa-arrow-down ms-2"></i></a>
+        </div>
+    </section>
+    <!-- about section -->
+    <section class="about section" id="about">
+        <div class="container d-flex justify-content-center">
+            <h1 class="section-title-01">About me</h1>
+            <h2 class="section-title-02">About me</h2>
+        </div>
+        <div class="container flex-center">
+            <div class="container flex-center">
+                <div class="about-img">
+                    <img src="girl.webp" alt="">
+                </div>
+                <div class="about-info">
+                    <div class="description">
+                        <h3> I'm Marj</h3>
+                        <h4>A Full Stack Developer</h4>
+                        <p> I am proficient in HTML, CSS, and JavaScript,<br> and I have experience with a variety of
+                            front-end frameworks,<br> including React and bootstrap, I am confident that I have the
+                            skills <br> and the drive to be a successful web developer.<br>I am eager to learn more and
+                            to contribute<br> to the web development community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills section -->
+    <!-- <section class="skills section" id="skills">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Skills</h1>
+            <h2 class="section-title-02">Skills</h2>
+            <div class="content">
+                <div class="skills-desscription">
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- services section -->
+    <section class="service section" id="services">
+        <div class="container d-flex justify-content-center">
+            <h1 class="section-title-01">Services</h1>
+            <h2 class="section-title-02">Services</h2>
+        </div>
+        <div class="services-description container flex-end ms-5">
+            <h3>What I Provide</h3>
+        </div>
+        <div class="container flex-center">
+            <ul class="service-list">
+                <li class="service-container">
+                    <div class="service-card">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <h3>UI/UX Consultancy</h3>
+                        <div class="learn-more-btn">Learn more <i class="fas fa-long-arrow-alt-right"></i></div>
+                    </div>
+                    <div class="service-modal flex-center">
+                        <div class="service-modal-body">
+                            <i class="fas fa-times modal-close-btn"></i>
+                            <h3>Ui/Ux Consultancy</h3>
+                            <h4>What is UX consulting?</h4>
+                            <p>UI/UX consulting refers to the practice of providing professional
+                                advice and guidance on user interface (UI) and user experience (UX) design.
+                                UI focuses on the visual and interactive elements of a product or service,
+                                while UX deals with the overall experience and satisfaction
+                                of users when interacting with a product or service.</p>
+                            <h4>What I provide</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i>Established the right UX processes</li>
+                                <li><i class="fas fa-check-circle"></i>Create Exeptional Experiences</li>
+                                <li><i class="fas fa-check-circle"></i>Discover new Business Opportunities</li>
+                                <li><i class="fas fa-check-circle"></i>Save Resources</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="service-container">
+                    <div class="service-card">
+                        <i class="fas fa-photo-video"></i>
+                        <h3>Branding & Design</h3>
+                        <div class="learn-more-btn">Learn more <i class="fas fa-long-arrow-alt-right"></i></div>
+                    </div>
+                    <div class="service-modal flex-center">
+                        <div class="service-modal-body">
+                            <i class="fas fa-times modal-close-btn"></i>
+                            <h3>Branding & Design</h3>
+                            <h4>What is Brand & Design?</h4>
+                            <p>Brand Design can be defined as one of the crucial marketing practices of
+                                creating the name, logo, design, and the symbolic elements related to the brand to
+                                create a distinctive identity in comparison to the other brands in the market and also
+                                providing impetus to the product differentiation.</p>
+                            <h4>What I Provide</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i>Logo Design</li>
+                                <li><i class="fas fa-check-circle"></i>Banner Design</li>
+                                <li><i class="fas fa-check-circle"></i>Visual Identity Packages</li>
+                                <li><i class="fas fa-check-circle"></i>Business Card & Business Systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="service-container">
+                    <div class="service-card">
+                        <i class="fas fa-file-code"></i>
+                        <h3>Web development</h3>
+                        <div class="learn-more-btn">Learn more <i class="fas fa-long-arrow-alt-right"></i></div>
+                    </div>
+                    <div class="service-modal flex-center">
+                        <div class="service-modal-body">
+                            <i class="fas fa-times modal-close-btn"></i>
+                            <h3>Web Development</h3>
+                            <h4>What is Web Development?</h4>
+                            <p>Web development services are used to design,
+                                build, support and evolve all
+                                types of web based sortware</p>
+                            <h4>What I provide</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i>Web application development</li>
+                                <li><i class="fas fa-check-circle"></i>testing</li>
+                                <li><i class="fas fa-check-circle"></i>maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="service-container">
+                    <div class="service-card">
+                        <i class="fas fa-align-left"></i>
+                        <h3>Content Writing</h3>
+                        <div class="learn-more-btn">Learn more <i class="fas fa-long-arrow-alt-right"></i></div>
+                    </div>
+                    <div class="service-modal flex-center">
+                        <div class="service-modal-body">
+                            <i class="fas fa-times modal-close-btn"></i>
+                            <h3>Content Writing</h3>
+                            <h4>What is Content Writing?</h4>
+                            <p>Content Writing is the process of planning,
+                                writing and editing web content, typically for digital marketing purposes.</p>
+                            <h4>What I provide</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i>Web content writing</li>
+                                <li><i class="fas fa-check-circle"></i>Blog writing for websites</li>
+                                <li><i class="fas fa-check-circle"></i>Social media content</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- portfolio section -->
+
+    <section class="portfolio section" id="portfolio">
+        <div class="container d-flex justify-content-center">
+            <h1 class="section-title-01">Portfolio</h1>
+            <h2 class="section-title-02">Portfolio</h2>
+        </div>
+        <div class="container flex-center">
+            <div class="content">
+                <div class="portfolio-list">
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay">
+                                <div class="info">
+                                    <h3>Web Design</h3>
+                                    <span>Recipe Website</span>
+                                </div>
+                                <img src="Spice Savvy.png" alt="">
+                            </div>
+                            <div class="portfolio-model flex-center">
+                                <div class="portfolio-model-body">
+                                    <i class="fas fa-times portfolio-close-btn"></i>
+                                    <h3>Web Design</h3>
+                                    <img src="Spice Savvy.png" alt="">
+                                    <p>Spice Savvy is a Website design for cooking recipe,
+                                        it formed to help us cooked the best way from different country </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+
+    <section class="contact section" id="contact">
+        <div class="container d-flex justify-content-center">
+            <h1 class="section-title-01">Contact Me</h1>
+            <h2 class="section-title-02">Contact Me</h2>
+        </div>
+        <div class="container flex-center">
+            <div class="content">
+                <div class="contact-left">
+                    <h2>Let's discuss your project</h2>
+                    <ul>
+                        <li class="contact-list m-3">
+                            <h3 class="item-title"><i class="fas fa-phone"></i>Phone</h3>
+                            <span>+63 995-007-7160</span>
+                        </li>
+                        <li class="contact-list m-3">
+                            <h3 class="item-title"><i class="fas fa-envelope"></i>Email</h3>
+                            <span><a href="mailto:marjoriemainit.28@gmail.com">marjoriemainit.28@gmail.com</a></span>
+                        </li>
+                        <li class="contact-list m-3">
+                            <h3 class="item-title"><i class="fas fa-map-marker-alt"></i>Official Address</h3>
+                            <span>Camp Grezar st. Quezon City</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-right">
+                    <p>I'm always open to discussing product<br><span>design work or parnership</span></p>
+                    <form action="" class="contact-form">
+                        <div class="first-row">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="second-row">
+                            <input type="email" placeholder="Email">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="third-row">
+                            <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                        </div>
+                        <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="about group">
+                <h2>Marjorie</h2>
+                <p>front-end Developer</p>
+                <a href="#about">About me</a>
+            </div>
+            <div class="hr"></div>
+            <div class="info group">
+                <h3>More</h3>
+                <ul>
+                    <li><a href="#sevices">Services</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="follow group">
+                <h3>Follow</h3>
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright group">
+                <p>2023 by Marjorie Mainit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
