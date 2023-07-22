@@ -1,7 +1,7 @@
-// navifation bar effects on scroll
-window.addEventListener("scroll", function(){
-    const header = this.document.querySelector("header");
-    header.classList.toggle("sticky", this.window.scrollY > 0);
+// navigation bar effects on scroll
+window.addEventListener("scroll", function () {
+  const header = this.document.querySelector("header");
+  header.classList.toggle("sticky", this.window.scrollY > 0);
 });
 //sevices section - modal
 
@@ -9,55 +9,77 @@ const serviceModals = document.querySelectorAll(".service-modal");
 const learnmoreBtns = document.querySelectorAll(".learn-more-btn");
 const modalCloseBtns = document.querySelectorAll(".modal-close-btn");
 
-var modal = function(modalClick){
-    serviceModals[modalClick].classList.add("active");
+var modal = function (modalClick) {
+  serviceModals[modalClick].classList.add("active");
 }
 
 learnmoreBtns.forEach((learnmoreBtn, i) => {
-    learnmoreBtn.addEventListener("click", () => {
-        modal(i);
-    })
+  learnmoreBtn.addEventListener("click", () => {
+    modal(i);
+  })
 })
 
 modalCloseBtns.forEach((modalCloseBtn) => {
-    modalCloseBtn.addEventListener("click", () => {
-        serviceModals.forEach((modalView) => {
-            modalView.classList.remove("active");
-        }) 
+  modalCloseBtn.addEventListener("click", () => {
+    serviceModals.forEach((modalView) => {
+      modalView.classList.remove("active");
     })
+  })
 });
 
 //porfolio section-modal
 
-const portfolioModals = document.querySelectorAll(".portfolio-model");
-const imgCards = document.querySelectorAll(".img-card");
-const portfolioCloseBtns = document.querySelectorAll(".portfolio-close-btn");
+const Modals = document.querySelectorAll(".portfolio-modal");
+const openBtns = document.querySelectorAll("#open");
+const porfolioModalCloseBtns = document.querySelectorAll(".portfolio-close-btn");
 
-var portfolioModal = function(modalClick){
-    portfolioModals[modalClick].classList.add("active");
+var modal = function (modalClick) {
+  Modals[modalClick].classList.add("active");
 }
 
-imgCards.forEach((imgCard, i) => {
-    imgCard.addEventListener("click", () => {
-       portfolioModal(i);
-    })
+openBtns.forEach((openBtn, i) => {
+  openBtn.addEventListener("click", () => {
+    modal(i);
+  })
 })
 
-portfolioCloseBtns.forEach((portfolioCloseBtn) => {
-    portfolioCloseBtn.addEventListener("click", () => {
-        portfolioModals.forEach((portfolioModalView) => {
-            portfolioModalView.classList.remove("active");
-        }) 
+porfolioModalCloseBtns.forEach((porfolioModalCloseBtn) => {
+  porfolioModalCloseBtn.addEventListener("click", () => {
+    serviceModals.forEach((View) => {
+      View.classList.remove("active");
     })
+  })
 });
 
 //website dark/light theme
+
+const themeBtn = document.querySelector(".theme-btn");
+
+themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-theme");
+  themeBtn.classList.toggle("sun");
+
+  localStorage.setItem("saved-theme", getCurrentTheme());
+  localStorage.setItem("saved-icon", getCurrentIcon());
+
+});
+
+const getCurrentTheme = () => document.body.classList.contains("dark-theme") ? "dark" : "light";
+const getCurrentIcon = () => themeBtn.classList.contains("sun") ? "sun" : "moon";
+
+const savedTheme = localStorage.getItem("saved-theme");
+const savedIcon = localStorage.getItem("saved-icon");
+
+if (savedTheme) {
+  document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme") ? "dark" : "light";
+  themeBtn.classList[savedIcon === "sun" ? "add" : "remove"]("sun");
+}
 
 // Scroll to top button
 
 const scrollTopBtn = document.querySelector(".scrollToTop-btn");
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   scrollTopBtn.classList.toggle("active", window.scrollY > 500);
 });
 
@@ -69,27 +91,20 @@ scrollTopBtn.addEventListener("click", () => {
 });
 
 
-// scroll effect
 
-// Smooth scrolling effect
-document.addEventListener('DOMContentLoaded', () => {
-    const scrollLinks = document.querySelectorAll('a.scroll-link');
-  
-    scrollLinks.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        if (targetElement) {
-          const targetOffset = targetElement.offsetTop;
-  
-          window.scrollTo({
-            top: targetOffset,
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-  });
-  
+
+
+// scroll reveal animation
+
+ScrollReveal({
+  reset: true,
+  distance: '60px',
+  duration: 2500,
+  delay: 400
+});
+
+ScrollReveal().reveal('.info, .title, .services-description ', { delay: 400, origin: 'left' });
+ScrollReveal().reveal('.home-img, .about-img', { delay: 500, origin: 'bottom' });
+ScrollReveal().reveal('.media-icons i, .contact-right', { delay: 500, origin: 'bottom', interval: 200 });
+ScrollReveal().reveal('.about-info', { delay: 500, origin: 'right' });
+ScrollReveal().reveal('.contact-left', { delay: 500, origin: 'left', interval: 200 });
