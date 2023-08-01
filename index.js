@@ -1,5 +1,5 @@
 // navigation bar effects on scroll
-window.addEventListener("scroll", function () {
+  window.addEventListener("scroll", function () {
   const header = this.document.querySelector("header");
   header.classList.toggle("sticky", this.window.scrollY > 0);
 });
@@ -80,8 +80,8 @@ ScrollReveal({
   delay: 400
 });
 
-ScrollReveal().reveal('.info, .title, .services-description ', { delay: 200, origin: 'left' });
-ScrollReveal().reveal('.home-img, .about-img', { delay: 200, origin: 'bottom' });
+ScrollReveal().reveal('.info, .title, .services-description, ', { delay: 200, origin: 'left' });
+ScrollReveal().reveal('.home-img, .about-img, .service-card', { delay: 200, origin: 'bottom' });
 ScrollReveal().reveal('.media-icons i, .contact-right', { delay: 200, origin: 'bottom', interval: 200 });
 ScrollReveal().reveal('.about-info', { delay: 200, origin: 'right' });
 ScrollReveal().reveal('.contact-left', { delay: 200, origin: 'left', interval: 200 });

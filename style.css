@@ -496,18 +496,9 @@ img {
     border-radius: 6px;
     box-shadow: var(--box-shadow);
     position: relative;
-    animation: mymove 5s ease 1;
+
 }
 
-@keyframes mymove {
-    0% {
-        transform: translateY(0);
-    }
-
-    30% {
-        transform: translateY(30px);
-    }
-}
 
 
 .service-card i {
@@ -600,9 +591,7 @@ img {
     color: var(--first-color);
 }
 
-.service-container:hover {
-    transform: translateY(20px);
-}
+
 
 
 /* portfolio section */
