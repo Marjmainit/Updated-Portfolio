@@ -80,7 +80,7 @@ ScrollReveal({
   delay: 400
 });
 
-ScrollReveal().reveal('.info, .title, .services-description, ', { delay: 200, origin: 'left' });
+ScrollReveal().reveal('.info, .title, .services-description', { delay: 200, origin: 'left' });
 ScrollReveal().reveal('.home-img, .about-img, .service-card', { delay: 200, origin: 'bottom' });
 ScrollReveal().reveal('.media-icons i, .contact-right', { delay: 200, origin: 'bottom', interval: 200 });
 ScrollReveal().reveal('.about-info', { delay: 200, origin: 'right' });
