@@ -27,29 +27,6 @@ modalCloseBtns.forEach((modalCloseBtn) => {
   })
 });
 
-//porfolio section-modal
-
-const Modals = document.querySelectorAll(".portfolio-modal");
-const openBtns = document.querySelectorAll("#open");
-const porfolioModalCloseBtns = document.querySelectorAll(".portfolio-close-btn");
-
-var modal = function (modalClick) {
-  Modals[modalClick].classList.add("active");
-}
-
-openBtns.forEach((openBtn, i) => {
-  openBtn.addEventListener("click", () => {
-    modal(i);
-  })
-})
-
-porfolioModalCloseBtns.forEach((porfolioModalCloseBtn) => {
-  porfolioModalCloseBtn.addEventListener("click", () => {
-    serviceModals.forEach((View) => {
-      View.classList.remove("active");
-    })
-  })
-});
 
 //website dark/light theme
 
@@ -103,8 +80,8 @@ ScrollReveal({
   delay: 400
 });
 
-ScrollReveal().reveal('.info, .title, .services-description ', { delay: 400, origin: 'left' });
-ScrollReveal().reveal('.home-img, .about-img', { delay: 500, origin: 'bottom' });
-ScrollReveal().reveal('.media-icons i, .contact-right', { delay: 500, origin: 'bottom', interval: 200 });
-ScrollReveal().reveal('.about-info', { delay: 500, origin: 'right' });
-ScrollReveal().reveal('.contact-left', { delay: 500, origin: 'left', interval: 200 });
+ScrollReveal().reveal('.info, .title, .services-description ', { delay: 200, origin: 'left' });
+ScrollReveal().reveal('.home-img, .about-img', { delay: 200, origin: 'bottom' });
+ScrollReveal().reveal('.media-icons i, .contact-right', { delay: 200, origin: 'bottom', interval: 200 });
+ScrollReveal().reveal('.about-info', { delay: 200, origin: 'right' });
+ScrollReveal().reveal('.contact-left', { delay: 200, origin: 'left', interval: 200 });
