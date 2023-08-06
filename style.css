@@ -353,8 +353,10 @@ img {
 
 .home-container .home-img img {
     width: 90%;
+    float: left;
     transform: translate(0, 0);
 }
+
 
 .home .scroll-down {
     color: var(--second-color);
@@ -830,7 +832,6 @@ footer {
     align-items: center;
     flex-direction: column;
     background: var(--third-color);
-    width: 100%;
     margin-top: 50px;
     padding: 3rem 2rem;
     color: var(--first-color);
@@ -843,8 +844,6 @@ footer a {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1150px;
 }
 
 .footer-container .about h2 {

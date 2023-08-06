@@ -69,8 +69,6 @@ scrollTopBtn.addEventListener("click", () => {
 
 
 
-
-
 // scroll reveal animation
 
 ScrollReveal({
